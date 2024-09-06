@@ -138,10 +138,13 @@ p {
   color: white;
   background: #0b93f6;
   align-self: flex-end;
+  text-align: left;
 }
+
 .received p {
   background: #e5e5ea;
   color: black;
+  text-align: left;
 }
 
 img {
@@ -149,6 +152,35 @@ img {
   height: 40px;
   border-radius: 50%;
   margin: 2px 5px;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  align-content: end;
+  animation: l5 1s infinite linear alternate;
+  background-color: white;
+}
+
+@keyframes l5 {
+    0%  {box-shadow: 20px 0 #000, -20px 0 #0002;background: #000 }
+    33% {box-shadow: 20px 0 #000, -20px 0 #0002;background: #0002}
+    66% {box-shadow: 20px 0 #0002,-20px 0 #000; background: #0002}
+    100%{box-shadow: 20px 0 #0002,-20px 0 #000; background: #000 }
+}
+
+.wrapper {
+  /* max-width: 500px; */
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 15px 30px;
+  border-radius: 25px;
+  position: relative;
+  color: white;
 }
 
 
